@@ -17,10 +17,12 @@ namespace Sistema_Tickets.Controladores
         Ticket ticket = new Ticket();
         TicketDAO ticketDao = new TicketDAO();
 
+
         public TicketController(TicketsView view)
         {
             vista = view;
             vista.GenerarButton.Click += new EventHandler(GenerarTicket);
+            
         }
 
         private void GenerarTicket(object serder,EventArgs e)
@@ -45,6 +47,7 @@ namespace Sistema_Tickets.Controladores
                 return;
             }
 
+            
             ticket.SoporteTicket = vista.SoporteComboBox.Text;
             ticket.EstadoTicket = vista.EstadoComboBox.Text;
             ticket.DetalleTicket = vista.DetalleTextBox.Text;
@@ -53,12 +56,12 @@ namespace Sistema_Tickets.Controladores
 
             if (inserto)
             {
-                MessageBox.Show("Ticket generado exitosamente");
+                MessageBox.Show("Ticket generado exitosamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             else
             {
-                MessageBox.Show("Ticket erroneo");
+                MessageBox.Show("Ticket Erroneó", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

@@ -21,8 +21,8 @@ namespace Sistema_Tickets.Modelos.DAO
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append("INSERT INTO TICKET ");
-                sql.Append("VALUES (@Soporte, @Estado, @Detalle);");
+                sql.Append(" INSERT INTO TICKET ");
+                sql.Append(" VALUES (@Soporte, @Estado, @Detalle);");
 
                 comando.Connection = MiConexion;
                 MiConexion.Open();

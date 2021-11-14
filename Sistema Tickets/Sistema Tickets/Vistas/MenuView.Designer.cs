@@ -32,9 +32,9 @@ namespace Sistema_Tickets.Vistas
             this.ribbonControlAdv1 = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+            this.TicketTolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.TicketTolStripButton = new System.Windows.Forms.ToolStripButton();
             this.DetalleTicketsToolStripButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
             this.ribbonControlAdv1.SuspendLayout();
@@ -114,6 +114,18 @@ namespace Sistema_Tickets.Vistas
             this.toolStripEx1.Size = new System.Drawing.Size(114, 66);
             this.toolStripEx1.TabIndex = 0;
             // 
+            // TicketTolStripButton
+            // 
+            this.TicketTolStripButton.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TicketTolStripButton.Image = global::Sistema_Tickets.Properties.Resources.boleto;
+            this.TicketTolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.TicketTolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TicketTolStripButton.Name = "TicketTolStripButton";
+            this.TicketTolStripButton.Size = new System.Drawing.Size(84, 49);
+            this.TicketTolStripButton.Text = "Generar Ticket";
+            this.TicketTolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.TicketTolStripButton.Click += new System.EventHandler(this.TicketTolStripButton_Click);
+            // 
             // toolStripTabItem1
             // 
             this.toolStripTabItem1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -150,18 +162,6 @@ namespace Sistema_Tickets.Vistas
             this.toolStripEx2.TabIndex = 0;
             this.toolStripEx2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStripEx2_ItemClicked);
             // 
-            // TicketTolStripButton
-            // 
-            this.TicketTolStripButton.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TicketTolStripButton.Image = global::Sistema_Tickets.Properties.Resources.boleto;
-            this.TicketTolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.TicketTolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TicketTolStripButton.Name = "TicketTolStripButton";
-            this.TicketTolStripButton.Size = new System.Drawing.Size(84, 49);
-            this.TicketTolStripButton.Text = "Generar Ticket";
-            this.TicketTolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.TicketTolStripButton.Click += new System.EventHandler(this.TicketTolStripButton_Click);
-            // 
             // DetalleTicketsToolStripButton
             // 
             this.DetalleTicketsToolStripButton.BackColor = System.Drawing.Color.White;
@@ -185,8 +185,9 @@ namespace Sistema_Tickets.Vistas
             this.Name = "MenuView";
             this.Style.MdiChild.IconHorizontalAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.Style.MdiChild.IconVerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Center;
-            this.Text = "Menú";
+            this.Text = "Sistema de Ticket";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).EndInit();
             this.ribbonControlAdv1.ResumeLayout(false);
             this.ribbonControlAdv1.PerformLayout();

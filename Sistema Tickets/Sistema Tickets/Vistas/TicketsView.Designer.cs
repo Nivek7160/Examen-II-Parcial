@@ -38,7 +38,7 @@ namespace Sistema_Tickets.Vistas
             this.DetalleTextBox = new System.Windows.Forms.TextBox();
             this.GenerarButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TicketTextBox = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -119,13 +119,13 @@ namespace Sistema_Tickets.Vistas
             this.label4.TabIndex = 7;
             this.label4.Text = "Ticket:";
             // 
-            // textBox2
+            // TicketTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(123, 27);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
+            this.TicketTextBox.Location = new System.Drawing.Point(123, 27);
+            this.TicketTextBox.Name = "TicketTextBox";
+            this.TicketTextBox.ReadOnly = true;
+            this.TicketTextBox.Size = new System.Drawing.Size(100, 20);
+            this.TicketTextBox.TabIndex = 8;
             // 
             // errorProvider1
             // 
@@ -136,7 +136,7 @@ namespace Sistema_Tickets.Vistas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(330, 320);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TicketTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.GenerarButton);
             this.Controls.Add(this.DetalleTextBox);
@@ -164,7 +164,7 @@ namespace Sistema_Tickets.Vistas
         public System.Windows.Forms.TextBox DetalleTextBox;
         public System.Windows.Forms.Button GenerarButton;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox TicketTextBox;
         public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

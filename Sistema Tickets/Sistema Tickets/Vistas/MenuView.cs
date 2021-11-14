@@ -77,5 +77,10 @@ namespace Sistema_Tickets.Vistas
             VistaDetalle = null;
         }
 
+        private void MenuView_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
